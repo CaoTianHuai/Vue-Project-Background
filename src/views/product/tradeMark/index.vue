@@ -15,12 +15,12 @@
         width="width"
       ></el-table-column>
       <el-table-column prop="logUrl" label="品牌logo" width="width">
-        <template slot-scope="{ row, $index }">
+        <template slot-scope="{ row }">
           <img :src="row.logoUrl" style="width: 100px; height: 100px" />
         </template>
       </el-table-column>
       <el-table-column prop="" label="操作" width="width">
-        <template slot-scope="{ row, $index }">
+        <template slot-scope="{ row }">
           <el-button
             type="warning"
             icon="el-icon-edit"
