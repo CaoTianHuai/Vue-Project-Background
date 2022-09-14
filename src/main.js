@@ -35,6 +35,9 @@ Vue.use(ElementUI)
 
 import API from '@/api'
 Vue.prototype.$API = API
+//引入全局组件
+import CategorySelect from '@/components/CategorySelect'
+Vue.component(CategorySelect.name,CategorySelect)
 Vue.config.productionTip = false
 
 new Vue({
